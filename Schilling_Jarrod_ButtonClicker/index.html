@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
             <input type="search" placeholder="Search">
         </form>
         <div class="login">
-            <button>Login</but>
+            <button onclick="logOut(this)">Login</but>
         </div>
     </div>
 
@@ -27,7 +28,7 @@
                     <div class="noun">noun</div>
                     <div class="plural">Plural: ninjas</div>
                     <div class="likes">
-                        <button>13 likes</button>
+                        <button onclick="alert('Ninja was liked')">13 likes</button>
                     </div>
                 </div>
                 <div class="row-1-col-2">
@@ -40,7 +41,7 @@
                     <div class="noun">noun</div>
                     <div class="plural">Plural: ninjas</div>
                     <div class="likes">
-                        <button>37 likes</button>
+                        <button onclick="alert('Ninja was liked')">37 likes</button>
                     </div>
                 </div>
                 <div class="row-2-col-2">
@@ -53,7 +54,7 @@
                 Dojonary is defined by <stong>YOU</stong>
             </div>
             <div class="define">
-                <button>Add Definition</button>
+                <button onclick="addDefinition(this)">Add Definition</button>
             </div>
         </div>
     </div>
