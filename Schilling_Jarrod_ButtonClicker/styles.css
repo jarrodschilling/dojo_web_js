@@ -1,66 +1,110 @@
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    background-color: gray;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    /* outline: 1px red dashed; */
 }
 
-.title {
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #C1C1C1;
+    padding: 10px 300px;
+    margin-bottom: 10px;
+}
+
+.nav-title {
     width: auto;
+    font-size: 32px;
 }
 
 .search {
-    width: 30%;
+    width: 35%;
+    height: 25px;
+    border: 2px solid black;
 }
 
 .search input {
     width: 100%;
+    height: 100%;
 }
 
 .login {
     width: auto;
+
 }
 
 .login button {
     width: 100px;
-    background-color: blue;
+    background-color: rgb(60, 121, 250);
     color: white;
+    padding: 5px;
+    border: 2px solid black;
 }
 
 .container {
     display: flex;
-    border: 1px solid black;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
+    padding: 0 300px;
 }
 
 .col-1 {
-    border: 1px solid blue;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 600px;
     flex-direction: column;
 }
 
 .row-1 {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
+    border: 4px solid black;
+    margin-bottom: 10px;;
+    padding: 10px;
 }
 
 .row-1-col-1 {
     flex: 1;
 }
 
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.noun {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.plural {
+    margin-bottom: 5px;
+}
+
+.likes button{
+    background-color: #FFD866;
+    padding: 5px;
+    width: 75px;
+    border: 2px solid black;
+}
+
 .row-1-col-2 {
     flex: 4;
+    align-self: center;
+    padding: 20px;
 }
 
 .row-2 {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
+    border: 4px solid black;
+    padding: 10px;
 }
 
 .row-2-col-1 {
@@ -69,15 +113,31 @@
 
 .row-2-col-2 {
     flex: 4;
+    align-self: center;
+    padding: 20px;
 }
 
 .col-2 {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
+    width: 250px;
+    height: 150px;
+    border: 4px solid black;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .row-3 {
-    border: 1px solid red;
     flex-direction: row;
+    font-size: 30px;
 }   
+
+.define button {
+    background-color: #93C57D;
+    padding: 5px;
+    width: 180px;
+    border: 2px solid black;
+    margin-top: 10px;
+    font-size: 20px;
+}
