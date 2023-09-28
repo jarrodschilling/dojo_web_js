@@ -9,50 +9,45 @@
 </head>
 <body>
     <div class="nav">
-        <div class="nav-title">
-            <h1>DOJONARY</h1>
-        </div>
+        <h1>DOJONARY</h1>
         <form class="search">
             <input type="search" placeholder="Search">
         </form>
-        <div class="login">
-            <button onclick="logOut(this)">Login</but>
-        </div>
+        <button class="login" onclick="logOut(this)">Login</but>
     </div>
-
     <div class="container">
         <div class="col-1">
             <div class="row-1">
                 <div class="row-1-col-1">
-                    <div class="title">ninja</div>
-                    <div class="noun">noun</div>
-                    <div class="plural">Plural: ninjas</div>
+                    <h2 class="title">ninja</h2>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: ninjas</p>
                     <div class="likes">
                         <button onclick="alert('Ninja was liked')">13 likes</button>
                     </div>
                 </div>
                 <div class="row-1-col-2">
-                    A practitioner skilled in the Japenese art of ninjitsu
+                    A practitioner skilled in the <a href="#">Japenese</a> art of <a href="#">ninjitsu</a>
                 </div>
             </div>
             <div class="row-2">
                 <div class="row-2-col-1">
-                    <div class="title">ninja</div>
-                    <div class="noun">noun</div>
-                    <div class="plural">Plural: ninjas</div>
+                    <h2 class="title">ninja</h2>
+                    <p class="noun">noun</p>
+                    <p class="plural">Plural: ninjas</p>
                     <div class="likes">
                         <button onclick="alert('Ninja was liked')">37 likes</button>
                     </div>
                 </div>
-                <div class="row-2-col-2">
-                    A programmer who breaks down problems with zen like focus
-                </div>
+                <p class="row-2-col-2">
+                    A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a> like focus
+                </p>
             </div>
         </div>
         <div class="col-2">
-            <div class="row-3">
+            <h3 class="row-3">
                 Dojonary is defined by <stong>YOU</stong>
-            </div>
+            </h3>
             <div class="define">
                 <button onclick="addDefinition(this)">Add Definition</button>
             </div>
