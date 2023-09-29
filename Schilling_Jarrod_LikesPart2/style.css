@@ -4,7 +4,7 @@
     border: 0;
     vertical-align: top;
     box-sizing: border-box;
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* body {
@@ -21,11 +21,13 @@
     margin-bottom: 20px;
     background-color: black;
     color: white;
+    font-size: 50px;
 }
 
 .your-feed {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .container-body {
@@ -34,7 +36,42 @@
 }
 
 .col-1 {
-    display: box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 12%;
+    padding: 10px;
+    margin-bottom: 120px;
+    margin-right: 20px;
+    border: 2px solid black;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.user-photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 70px;
+}
+
+.col-1 a {
+    margin-bottom: 20px;
+}
+
+.users {
+    border: 2px solid black;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .card-2 {
@@ -42,7 +79,7 @@
     align-items: top;
 }
 
-.counter {
+#neilCounter, #jimCounter, #nicholeCounter {
     margin-right: 20px;
     margin-left: -140px;
     margin-top: 10px;
