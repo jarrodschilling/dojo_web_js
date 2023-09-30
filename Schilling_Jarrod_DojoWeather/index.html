@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="nav-bar">
+        <div class="flex-container">
+            <h1 class="nav-title">DojoWeather</h1>
+            <ul class="nav-links">
+                <li><a href="#">Burbank</a></li>
+                <li><a href="#">Chicago</a></li>
+                <li><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- sub-NAVBAR -->
+    <div class="sub-nav">
+        <div class="sub-container">
+            <h2 class="sub-title">San Jose</h2>
+            <div class="tempType">
+                <label>show temperature in</label>
+                <select>
+                    <option>°C</option>
+                    <option>°F</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- BODY -->
+    <div class="flex-body">
+        <div class="body-container">
+            <div class="dayOfWeek">
+                <span class="day">Today</span>
+                <img class="weather-img" src="./assets/some_rain.png" alt="rain">
+                <span class="forcast">some rain</span>
+                <div class="temperatures">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayOfWeek">
+                <span class="day">Tomorrow</span>
+                <img class="weather-img" src="./assets/some_sun.png" alt="sun">
+                <span class="forcast">some sun</span>
+                <div class="temperatures">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayOfWeek">
+                <span class="day">Friday</span>
+                <img class="weather-img" src="./assets/some_clouds.png" alt="clouds">
+                <span class="forcast">some clouds</span>
+                <div class="temperatures">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+            <div class="dayOfWeek">
+                <span class="day">Saturday</span>
+                <img class="weather-img" src="./assets/some_sun.png" alt="sun">
+                <span class="forcast">some sun</span>
+                <div class="temperatures">
+                    <span class="high">24°</span>
+                    <span class="low">18°</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="flex-footer">
+        <div class="footer-container">
+            <img class="footerImage" src="./assets/cookie.png" alt="cookie">
+            <div class="cookie-container">
+                <span class="cookieTitle">Stop! Cookie time</span>
+                <span class="cookieBody">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></span>
+            </div>
+            <button class="acceptCookies">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
