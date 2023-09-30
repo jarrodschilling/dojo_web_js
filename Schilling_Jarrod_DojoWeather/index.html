@@ -12,9 +12,9 @@
         <div class="flex-container">
             <h1 class="nav-title">DojoWeather</h1>
             <ul class="nav-links">
-                <li><a href="#">Burbank</a></li>
-                <li><a href="#">Chicago</a></li>
-                <li><a href="#">Dallas</a></li>
+                <li><a href="#" onclick="alert('Loading weather report... Burbank is beautiful')">Burbank</a></li>
+                <li><a href="#" onclick="alert('Loading weather report... Da Bears')">Chicago</a></li>
+                <li><a href="#" onclick="alert('Loading weather report... Emmitt Smith still the greatest RB of ALL TIME!')">Dallas</a></li>
             </ul>
         </div>
     </div>
@@ -25,7 +25,7 @@
             <h2 class="sub-title">San Jose</h2>
             <div class="tempType">
                 <label>show temperature in</label>
-                <select>
+                <select onchange="cToF()">
                     <option>°C</option>
                     <option>°F</option>
                 </select>
@@ -41,8 +41,8 @@
                 <img class="weather-img" src="./assets/some_rain.png" alt="rain">
                 <span class="forcast">some rain</span>
                 <div class="temperatures">
-                    <span class="high">24°</span>
-                    <span class="low">18°</span>
+                    <span class="high" id="temp1">24°</span>
+                    <span class="low" id="temp2">18°</span>
                 </div>
             </div>
             <div class="dayOfWeek">
@@ -50,8 +50,8 @@
                 <img class="weather-img" src="./assets/some_sun.png" alt="sun">
                 <span class="forcast">some sun</span>
                 <div class="temperatures">
-                    <span class="high">24°</span>
-                    <span class="low">18°</span>
+                    <span class="high" id="temp3">27°</span>
+                    <span class="low" id="temp4">19°</span>
                 </div>
             </div>
             <div class="dayOfWeek">
@@ -59,8 +59,8 @@
                 <img class="weather-img" src="./assets/some_clouds.png" alt="clouds">
                 <span class="forcast">some clouds</span>
                 <div class="temperatures">
-                    <span class="high">24°</span>
-                    <span class="low">18°</span>
+                    <span class="high" id="temp5">21°</span>
+                    <span class="low" id="temp6">16°</span>
                 </div>
             </div>
             <div class="dayOfWeek">
@@ -68,8 +68,8 @@
                 <img class="weather-img" src="./assets/some_sun.png" alt="sun">
                 <span class="forcast">some sun</span>
                 <div class="temperatures">
-                    <span class="high">24°</span>
-                    <span class="low">18°</span>
+                    <span class="high" id="temp7">26°</span>
+                    <span class="low" id="temp8">21°</span>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <span class="cookieTitle">Stop! Cookie time</span>
                 <span class="cookieBody">We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></span>
             </div>
-            <button class="acceptCookies">I Accept</button>
+            <button class="acceptCookies" onclick="deleteCookie()">I Accept</button>
         </div>
     </div>
 
