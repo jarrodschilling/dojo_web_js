@@ -28,20 +28,40 @@ function cToF(c) {
 }
 
 
+var faren = 0
+function celsius(c) {
+    console.log(c)
+    faren = (c * 9/5) + 32
+    // console.log(cels)
+    return faren
+}
+
 var cels = 0
-function celsius(f) {
+function far(f) {
     // console.log(f)
-    cels = (f * 9/5) + 32
+    cels = (f - 32) * (5/9)
     // console.log(cels)
     return cels
 }
 
 var check = 0
-function test() {
-    for (let i = 1; i <= 8; i++) {
-        var temp = document.querySelector(`#temp${i}`)
-        temp.innerText = celsius(parseInt(temp.innerText)) + "°"
+function test(e) {
+    console.log(e.value)
+    if (e.value == "°C") {
+        for (let i = 1; i <= 8; i++) {
+            var temp = document.querySelector(`#temp${i}`)
+            temp.innerText = celsius(parseInt(temp.innerText)) + "°"
+        }
     }
+    else if (e.value == "°F") {
+        for (let i = 1; i <= 8; i++) {
+            var temp = document.querySelector(`#temp${i}`)
+            console.log(temp)
+            temp.innerText = far(parseInt(temp.innerText)) + "°"
+        }
+    }
+
+
     // for (let i = 0; i < tempsElement.length; i++) {
     //     check = celsius(tempsElement[i])
     //     // console.log(check)
@@ -50,10 +70,3 @@ function test() {
     //     // console.log(check)
     // }
 }
-
-
-
-
-
-
-
