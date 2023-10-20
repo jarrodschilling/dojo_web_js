@@ -41,7 +41,7 @@ function arrayCheck(array, x) {
 arr = ["hey", "you", "guyyys", 85, 91, 13, 23, "76"]
 check = 76
 
-console.log(arrayCheck(arr, check))
+// console.log(arrayCheck(arr, check))
 
 
 
@@ -50,6 +50,16 @@ console.log(arrayCheck(arr, check))
 // arr = [1, 2, 3, 4]
 // => 1 * 2 * 3 * 4 = 24
 
+function multiply(arr) {
+    let multi = 1
+    for (let i = 0; i < arr.length; i++) {
+        multi *= arr[i]
+    }
+    return multi
+}
+let array = [3, 5, 1, -4, -7, 9]
+
+// console.log(multiply(array))
 
 
 
@@ -57,7 +67,15 @@ console.log(arrayCheck(arr, check))
 // Build a function that returns an array of integers from n to 1 where n>0.
 // Example : n=5 --> [5,4,3,2,1]
 
-
+function buildArray(n) {
+    arr = []
+    for (let i = n; i > 0; i--) {
+        arr.push(i)
+    }
+    return arr
+}
+let x = 3
+console.log(buildArray(x))
 
 
 // 5) Build a function that returns an array of any given array in reverse. return another array in reverse order
